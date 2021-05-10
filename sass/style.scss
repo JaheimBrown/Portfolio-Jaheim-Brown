@@ -1,0 +1,35 @@
+/*  fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Variables */
+$backgroundColor: #191923;
+$primaryColor: #FFB400;
+$secondaryColor: #006DC3;
+$paraColor: #f2f2f2;
+
+/* Globals */
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{ font-family: "Poppins"; background-color: $backgroundColor; }
+
+ul{ list-style: none; }
+
+p { color: $paraColor };
+
+a{ text-decoration: none; color: #fff };
+
+/* Utilities */
+.flex{
+    display: flex;
+}
+
+/* Components */
+@import 'navbar';
+@import 'hero';
+@import 'about';

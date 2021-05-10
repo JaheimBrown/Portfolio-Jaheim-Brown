@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lottie files Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./src/app.js" defer></script>
+    <title>Portfolio | Jaheim Brown</title>
+</head>
+<body>
+    <!-- Navbar Section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">JB<span>Codes</span></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#portfolio" class="navbar__links" id="portfolio-page">Portfolio</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" id="contact-page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__main">
+                <h1 class="name">Jaheim Brown</h1>
+                <h2 class="title">Design, Develop & Deploy Cutting Edge Web Applications</h2>
+                <p class="description">I Design and Impliment modern web applications with the focus on responsive design and accessibility.</p>
+                <button class="btn">
+                    <a href="#contact">Contact</a>
+                </button>
+                <button class="btn-secondary">
+                    <a href="#portfolio">Portfolio</a>
+                </button>
+            </div>
+            <div class="hero__img">
+                <lottie-player  src="https://assets9.lottiefiles.com/packages/lf20_g0zfud2s.json"  background="transparent"  speed="1"  style="width: 525px; height: 525px;"  loop  autoplay></lottie-player>
+            </div>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_Rq8jJk.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay class="scroll"></lottie-player>
+        </div>
+    </section>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="about__container">
+                <div class="wrapper">
+                    <h1 class="about__heading">About Me</h1>
+                    <h2 class="about__title">Personal Info</h2>
+                    <p class="about__description">Get to know more about me.</p>
+                </div>
+                <div class="about__grid">
+                    <div class="image-container">
+                        <img src="./assets/Picture of lme.svg" alt="An illustration of me">
+                    </div>
+                    <div class="about__bio">
+                        <h3 class="opening"><span><</span>Hello</span><span>></span><strong> I'm Jaheim Brown</strong></h3>
+                        <p>A Self-taught Front End Developer and Web designer from St. Ann Jamaica. I first started on my self-taught journey back in October 2020 after being exposed to different web technologies and how you can combine them with design to create something meaningful to users all over the world. Although I know I’m still fairly new to the web development world I am excited to see where this journey will take me.</p>
+                        <h3 class="closing"><span><&it;/</span>Hello</span><span>></span></h3>
+                    </div>
+                    <div class="about__skills">
+                        <h3><span><</span>Skills</span><span>></span></h3>
+                        <div class="skills-container">
+                            <div class="skill-cards">HTML</div>
+                            <div class="skill-cards">CSS</div>
+                            <div class="skill-cards">JS</div>
+                            <div class="skill-cards">Sass</div>
+                            <div class="skill-cards">React</div>
+                            <div class="skill-cards">GIt</div>
+                            <div class="skill-cards">GSAP</div>
+                        </div>
+                        <h3><span><&it;/</span>Skills</span><span>></span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+    </main>
+</body>
+</html>

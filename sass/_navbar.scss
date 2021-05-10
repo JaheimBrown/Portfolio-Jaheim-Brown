@@ -1,0 +1,175 @@
+// Navbar Section
+.navbar{
+    background-color: $backgroundColor;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        height: 90px;
+        font-size: 1.125rem;
+        padding: 0 50px;
+        margin: 0 auto;
+        text-align: center;
+
+        #navbar__logo{
+            font-family: 'Lobster', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: $primaryColor;
+            cursor: pointer;
+
+            span{
+                color: $secondaryColor;
+            }
+        }
+
+        .navbar__menu{
+            display: flex;
+            align-items: center;
+
+            .navbar__item{
+                display: flex;
+                align-items: center;
+                height: 90px;
+                width: 100%;
+                // padding: 0 1rem;
+
+                .navbar__links{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 125px;
+                    height: 100%;
+                    transition: .3s ease;
+
+                    &:hover{
+                        color: $secondaryColor;
+                        transition: .3s ease;
+                    }
+                }
+            }
+        }
+        .navbar__btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background: $primaryColor;
+            color: #fff;
+            position: relative;
+            box-shadow: 4px 4px 4px  rgba(0, 0, 0, 50%);
+            cursor: pointer;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 1rem 2rem;
+                position: relative;
+                z-index: 2;
+                font-weight: bold;
+                color: #fff;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                border-radius: 4px;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 0;
+                color: #fff;
+                transition: .3s ease-in-out;
+            }
+            &:hover:after{
+                width: 100%;
+                background-color: $secondaryColor;
+                color: #fff;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+// Mobile Responsive
+@media screen and (max-width: 64rem) {
+    .navbar__container{
+        //Mobile Menu
+        .navbar__toggle{
+            position: absolute;
+            right: 50px;
+            top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 5%;
+            z-index: 10;
+            cursor: pointer;
+            .bar{
+                height: 3px;
+                width: 30px;
+                background-color: #fff;
+                margin: 5px 0;
+                transition: .3s ease-in-out;
+            }
+        }
+        .navbar__toggle.is-active{
+            .bar:nth-child(2){
+                opacity: 0;
+            }
+            .bar:nth-child(1){
+                transition: .3s ease-in-out;
+                transform: translateY(13px) rotate(45deg);
+            }
+            .bar:nth-child(3){
+                transition: .3s ease-in-out;
+                transform: translateY(-13px) rotate(-45deg);
+            }
+        }
+        .navbar__menu{
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+            background-color: $backgroundColor;
+            top: -1000px;
+            left: 0;
+            transition: .4s ease-in-out;
+            .navbar__item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .navbar__links{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .navbar__btn{
+                margin-bottom: 3rem;
+                padding: 1rem 3rem;
+                width: 80%;
+            }
+        }
+        .navbar__menu.is-active{
+            transition: .4s ease-in-out;
+            top: 100%;
+        }
+    }
+}
