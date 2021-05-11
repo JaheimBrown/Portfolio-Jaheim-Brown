@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="./src/app.js" defer></script>
-    <title>Portfolio | Jaheim Brown</title>
+    <title>Jaheim Brown | Front End Developer</title>
 </head>
 <body>
     <!-- Navbar Section-->
@@ -58,6 +58,7 @@
             <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_Rq8jJk.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay class="scroll"></lottie-player>
         </div>
     </section>
+
     <main>
         <!-- About Section -->
         <section id="about">
@@ -92,7 +93,84 @@
                 </div>
             </div>
         </section>
+        
         <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+          <div class="portfolio__container">
+              <div class="heading">
+                  <h1>Portfolio</h1>
+                  <h2>Latest Projects</h2>
+                  <p>Below are some Projects I have created.</p>
+              </div>
+              <div class="project-container">
+                  <div class="project">
+                      <div class="img-container1"></div>
+                      <div class="description">
+                          <h1>Pure Arts</h1>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
+                          <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JS</li>
+                              <li>GSAP</li>
+                            </ul>
+                            <button class="project-btn">
+                                <a href="#pureart">View Site</a>
+                            </button>
+                    </div>
+                  </div>
+                  <!-- project 2 -->
+                  <div class="project">
+                    <div class="img-container2"></div>
+                    <div class="description">
+                        <h1>GameMax</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
+                        <ul>
+                            <li>REACT</li>
+                            <li>CSS</li>
+                            <li>GSAP</li>
+                          </ul>
+                          <button class="project-btn">
+                              <a href="#pureart">View Site</a>
+                          </button>
+                  </div>
+                </div>
+                <!-- project 3 -->
+                <div class="project">
+                    <div class="img-container3"></div>
+                    <div class="description">
+                        <h1>Macs</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
+                        <ul>
+                            <li>LIQUID</li>
+                            <li>CSS</li>
+                            <li>GSAP</li>
+                          </ul>
+                          <button class="project-btn">
+                              <a href="#pureart">View Site</a>
+                          </button>
+                  </div>
+                </div>
+                </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <form >
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <label for="subject">Subject</label>
+                    <input type="text" subject="subject" id="subject">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button><a href="#">Send Message</a></button>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
