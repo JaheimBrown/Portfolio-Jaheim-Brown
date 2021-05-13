@@ -2,11 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3.5rem;
+    // margin-bottom: 3.5rem;
 
     .hero__container{
         max-width: 1300px;
-        height: 550px;
+        height: auto;
         display: grid;
         grid-template-columns: 3fr 1fr;
         align-items: center;
@@ -15,7 +15,8 @@
 
         .hero__main{
             align-self: center;
-            padding-bottom: 3rem;
+            position: relative;
+            bottom: 20px;
             .title{
                 font-size: 3rem;
                 font-weight: bold;
@@ -128,14 +129,13 @@
         }
         .hero__img{
            position: relative;
-           bottom: 1.5rem;
            left: 1.5rem;
         }
 
         // cheveron animation
         .scroll{
             position: absolute;
-            bottom: 10px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
         }

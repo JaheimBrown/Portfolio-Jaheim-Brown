@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 3rem;
+        color: $primaryColor;
+    }
+
+    p{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    a{
+        text-transform: uppercase;
+        color: $secondaryColor;
+        text-decoration: underline;
+    }
+}

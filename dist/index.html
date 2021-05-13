@@ -8,14 +8,13 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./src/app.js" defer></script>
     <title>Jaheim Brown | Front End Developer</title>
 </head>
 <body>
     <!-- Navbar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">JB<span>Codes</span></a>
+            <a href="#" id="navbar__logo">JB<span>Codes</span></a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,7 +22,7 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    <a href="#" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#about" class="navbar__links" id="about-page">About</a>
@@ -39,7 +38,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero__container">
             <div class="hero__main">
                 <h1 class="name">Jaheim Brown</h1>
@@ -99,12 +98,14 @@
           <div class="portfolio__container">
               <div class="heading">
                   <h1>Portfolio</h1>
-                  <h2>Latest Projects</h2>
+                  <h2>Projects</h2>
                   <p>Below are some Projects I have created.</p>
               </div>
               <div class="project-container">
                   <div class="project">
-                      <div class="img-container1"></div>
+                      <div class="img-container1"">
+                          <img src="./assets/europeana-5TK1F5VfdIk-unsplash.jpg" style="width: 720px; height: 350px;" alt="project1">
+                      </div>
                       <div class="description">
                           <h1>Pure Arts</h1>
                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
@@ -121,7 +122,9 @@
                   </div>
                   <!-- project 2 -->
                   <div class="project">
-                    <div class="img-container2"></div>
+                    <div class="img-container2">
+                        <img src="./assets/john-towner-JgOeRuGD_Y4-unsplash.jpg"  style="width: 720px; height: 350px;" alt="project2">
+                    </div>
                     <div class="description">
                         <h1>GameMax</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
@@ -137,7 +140,9 @@
                 </div>
                 <!-- project 3 -->
                 <div class="project">
-                    <div class="img-container3"></div>
+                    <div class="img-container3">
+                        <img src="./assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg"  style="width: 720px; height: 350px;" alt="project2">
+                    </div>
                     <div class="description">
                         <h1>Macs</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel corrupti fugit, nemo aliquam tempora sapiente cupiditate ea odio velit, suscipit maxime adipisci error repudiandae perferendis ex magnam. Harum, perspiciatis natus!</p>
@@ -163,19 +168,36 @@
                     <h2>Get In Touch</h2>
                     <p>Plese submit the form below so that I can get back to you as soon as possible.</p>
                 </div>
-                <form >
+                <form action="https://formsubmit.co/jaheimcbrown@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/dist/pages/thankYou.html">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" required>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="subject">Subject</label>
-                    <input type="text" subject="subject" id="subject">
+                    <input type="email" name="email"  required>
+                    <label for="subject">Subject (Optional)</label>
+                    <input type="text" name="_subject">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                    <button><a href="#">Send Message <i class="fas fa-paper-plane"></i></a></button>
+                    <textarea type="text" name="message" required"></textarea>
+                    <button type="submit"><a>Send Message <i class="fas fa-paper-plane"></i></a></button>
                 </form>
             </div>
         </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+        <div class="footer__container">
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; Designed & Developed by Jaheim Brown🔥</p>
+        </div>
+    </footer>
+
+    <script src="./src/app.js"></script>
 </body>
 </html>
